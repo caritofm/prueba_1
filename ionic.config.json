@@ -1,0 +1,7 @@
+{
+  "name": "Cookapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
