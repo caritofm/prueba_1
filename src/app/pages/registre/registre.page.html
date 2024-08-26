@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>registre</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p> Ingrese su nombre</p>
+  <ion-input
+  id="input-name"
+  type="name"
+  fill="solid"
+  label="Nombre"
+  labelPlacement="floating"
+  errorText="Ingrese su nombre"
+  ngModel
+  name
+></ion-input>
+
+<p>Ingrese su email</p>
+<ion-input
+  id="input-email"
+  type="email"
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  errorText="Invalid email"
+  ngModel
+  email
+></ion-input>
+<p>Ingrese su nueva contraseña</p>
+<ion-input
+  id="input-password"
+  type="password"
+  fill="solid"
+  label="Contraseña"
+  labelPlacement="floating"
+  errorText="Invalid password"
+  ngModel
+  password></ion-input>
+  <p>Confirme su contraseña</p>
+  <ion-input
+  id="input-password-"
+  type="password"
+  fill="solid"
+  label="Confirme su contraseña"
+  labelPlacement="floating"
+  errorText="Invalid password"
+  ngModel
+  password></ion-input>
+
+  <ion-button  id="button-registrte"   fill="solid">Registrarse</ion-button>
+
+
+</ion-content>

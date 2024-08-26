@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <img  src="./assets/icon/logo.jpeg" alt="">
+    <ion-title >CookApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <p>Ingrese su email</p>
+  <ion-input
+  id="input"
+  type="email"
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  helperText="Enter a valid email"
+  errorText="Invalid email"
+  ngModel
+  email
+></ion-input>
+
+<p>Ingrese su contraseña</p>
+<ion-input
+  id="password"
+  type="password"
+  fill="solid"
+  label="Pasword"
+  labelPlacement="floating"
+  errorText="Invalid password"
+  ngModel
+  email
+></ion-input>
+
+<ion-button  id="button-entrar" fill="solid">Entrar</ion-button>
+<ion-button  id="button-registrte"   fill="solid">Registrarse</ion-button>
+<ion-text>¿Ha olvidado su contraseña?</ion-text>
+
+  
+</ion-content>
