@@ -48,8 +48,43 @@
   errorText="Invalid password"
   ngModel
   password></ion-input>
+  <p>Ingrese su genero</p>
+  <ion-item id="genero">
+    <ion-select label="Genero" >
+      <ion-select-option value="Femenino">Femenino</ion-select-option>
+      <ion-select-option value="Masculino">Masculino</ion-select-option>
+      <ion-select-option value="No Binario">No Binario</ion-select-option>
+      <ion-select-option value="Prefiero no decirlo">Prefiero no decirlo</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <p>Elija una pregunta de seguridad</p>
+  <ion-item id="pregunta-seguridad">
+    <ion-select label="Pregunta de seguridad" >
+      <ion-select-option value="¿Mejor amiga de mi infancia?">¿Mejor amiga de mi infancia?</ion-select-option>
+      <ion-select-option value="¿Segundo nombre de mi madre?">¿Segundo nombre de mi madre?</ion-select-option>
+      <ion-select-option value="Nombre de mi mascota">Nombre de mi mascota</ion-select-option>
+      <ion-select-option value="¿Que me hubiera gustado estudiar en mi niñez?">¿Que me hubiera gustado estudiar en mi niñez?</ion-select-option>
+    </ion-select>
+  </ion-item>
 
+  <p>Ingrese su respuesta:</p>
+  <ion-input
+  id="respuesta"
+  type="text"
+  fill="solid"
+  label="Confirme su contraseña"
+  labelPlacement="floating"
+  errorText="Ingrese su respuesta"
+  ngModel></ion-input>
+
+  <p>Que tipo de comida prefieres:</p>
+  <ion-item id="comida">
+    <ion-select label="Tipo de comida de preferencia" >
+      <ion-select-option value="Vegana">Vegana</ion-select-option>
+      <ion-select-option value="Vegetariana">Vegetariana</ion-select-option>
+      <ion-select-option value="Carnivora">Carnivora</ion-select-option>
+      <ion-select-option value="Prefiero no decirlo">Prefiero no decirlo</ion-select-option>
+    </ion-select>
+  </ion-item>
   <ion-button  id="button-registrte"   fill="solid">Registrarse</ion-button>
-
-
 </ion-content>

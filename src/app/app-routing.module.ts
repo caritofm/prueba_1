@@ -27,6 +27,28 @@ const routes: Routes = [
     path: 'registre',
     loadChildren: () => import('./pages/registre/registre.module').then( m => m.RegistrePageModule)
   },
+  {
+    path: 'reportes1',
+    loadChildren: () => import('./pages/reportes1/reportes1.module').then( m => m.Reportes1PageModule)
+  },
+  {
+    path: 'calificar',
+    loadChildren: () => import('./pages/calificar/calificar.module').then( m => m.CalificarPageModule)
+  },
+  {
+    path: 'cuenta',
+    loadChildren: () => import('./pages/cuenta/cuenta.module').then( m => m.CuentaPageModule)
+  },
+  {
+    path: 'eliminarcuenta',
+    loadChildren: () => import('./pages/eliminarcuenta/eliminarcuenta.module').then( m => m.EliminarcuentaPageModule)
+  },
+  {
+    path: 'olvidasteclave',
+    loadChildren: () => import('./pages/olvidasteclave/olvidasteclave.module').then( m => m.OlvidasteclavePageModule)
+  },
+ 
+  
 ];
 
 @NgModule({

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Reportes de recetas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor = "let usuario of usuarios">
+      <ion-label>Nombre:</ion-label>
+      <ion-label>{{usuario.nombre}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item *ngFor = "let receta of recetas">
+      <ion-label>Nombre de la receta : </ion-label>
+      <ion-label> {{receta.nombreRecetas}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item id="motivo">
+    <ion-select label="Motivo del reporte">
+      <ion-select-option value="Es una publicacion ofensiva" >Es una publicacion ofensiva</ion-select-option>
+      <ion-select-option value="No es acorde al contenido de la aplicacion">No es acorde al contenido de la aplicacion"</ion-select-option>
+      <ion-select-option value="Es inapropiado">Es inapropiado</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button  id="button-registrte"   fill="solid">Enviar reporte</ion-button>
+  
+</ion-content>
