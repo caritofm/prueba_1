@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>reportes2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-title>Reportar comentario</ion-title>
+  <ion-list>
+    <ion-item *ngFor="let x of usuario" >
+      <ion-textarea label="Comentario de:"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Nombre de usuario:" ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Motivo de reporte" placeholder="Selecione una opcion">
+        <ion-select-option value="El comentario me parece ofensivo">El comentario me parece ofensivo</ion-select-option>
+        <ion-select-option value="El contenido es impropio y mal educado">El contenido es impropio y mal educado</ion-select-option>
+        <ion-select-option value="Es dañina">Es dañina</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button>Enviar</ion-button>
+  </ion-list>
+
+</ion-content>

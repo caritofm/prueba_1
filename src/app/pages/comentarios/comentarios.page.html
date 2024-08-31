@@ -1,0 +1,14 @@
+
+<ion-header [translucent]="true">
+  <app-componente1></app-componente1>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-list>
+  <ion-title>Comentarios:</ion-title>
+  <ion-item *ngFor="let x of usuario">
+    <ion-label>{{x.nombreUsuario}}: {{x.comentario}}</ion-label>
+    <ion-icon name="warning-outline"></ion-icon>
+  </ion-item>
+ </ion-list>
+</ion-content>

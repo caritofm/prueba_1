@@ -47,6 +47,31 @@ const routes: Routes = [
     path: 'olvidasteclave',
     loadChildren: () => import('./pages/olvidasteclave/olvidasteclave.module').then( m => m.OlvidasteclavePageModule)
   },
+  {
+    path: 'cuentaeliminada',
+    loadChildren: () => import('./pages/cuentaeliminada/cuentaeliminada.module').then( m => m.CuentaeliminadaPageModule)
+  },
+  {
+    path: 'respuestaseguridad',
+    loadChildren: () => import('./pages/respuestaseguridad/respuestaseguridad.module').then( m => m.RespuestaseguridadPageModule)
+  },
+  {
+    path: 'cambiapassword',
+    loadChildren: () => import('./pages/cambiapassword/cambiapassword.module').then( m => m.CambiapasswordPageModule)
+  },
+  {
+    path: 'notfound',
+    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
+  },
+  {
+    path: 'reportes2',
+    loadChildren: () => import('./pages/reportes2/reportes2.module').then( m => m.Reportes2PageModule)
+  },
+  {
+    path: 'comentarios',
+    loadChildren: () => import('./pages/comentarios/comentarios.module').then( m => m.ComentariosPageModule)
+  },
+  
  
   
 ];

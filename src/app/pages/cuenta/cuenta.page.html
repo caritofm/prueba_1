@@ -5,9 +5,35 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cuenta</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-title>Cuenta</ion-title>
+  <ion-icon name="person-outline" size="large"></ion-icon>
+  <ion-input
+  type="name"
+  fill="solid"
+  label="Nombre: "
+  labelPlacement="floating"
+  ngModel
+  nombre
+></ion-input>
+<ion-input
+  type="email"
+  fill="solid"
+  label="Email: "
+  labelPlacement="floating"
+  ngModel
+  email
+></ion-input>
+<ion-input
+  type="recetas"
+  fill="solid"
+  label="Recetas publicadas:"
+  labelPlacement="floating"
+  ngModel
+></ion-input>
+
+<ion-button>Eliminar cuenta</ion-button>
+
+<ion-button>Modificar contraseña</ion-button>
+
+ 
 </ion-content>
