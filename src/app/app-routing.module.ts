@@ -47,10 +47,7 @@ const routes: Routes = [
     path: 'olvidasteclave',
     loadChildren: () => import('./pages/olvidasteclave/olvidasteclave.module').then( m => m.OlvidasteclavePageModule)
   },
-  {
-    path: 'cuentaeliminada',
-    loadChildren: () => import('./pages/cuentaeliminada/cuentaeliminada.module').then( m => m.CuentaeliminadaPageModule)
-  },
+  
   {
     path: 'respuestaseguridad',
     loadChildren: () => import('./pages/respuestaseguridad/respuestaseguridad.module').then( m => m.RespuestaseguridadPageModule)
@@ -70,6 +67,10 @@ const routes: Routes = [
   {
     path: 'comentarios',
     loadChildren: () => import('./pages/comentarios/comentarios.module').then( m => m.ComentariosPageModule)
+  },
+  {
+    path: 'visualrecetas',
+    loadChildren: () => import('./pages/visualrecetas/visualrecetas.module').then( m => m.VisualrecetasPageModule)
   },
   
  

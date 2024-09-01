@@ -1,10 +1,14 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Reportes de recetas</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-title>Reporte de recetas</ion-title>
   <ion-list>
     <ion-item *ngFor = "let usuario of usuarios">
       <ion-label>Nombre:</ion-label>
@@ -27,6 +31,8 @@
     </ion-select>
   </ion-item>
 
-  <ion-button  id="button-registrte"   fill="solid">Enviar reporte</ion-button>
+  <ion-button  size="medium" color="light" (click)="redirect()">
+    <ion-text>Enviar reporte</ion-text>
+  </ion-button>
   
 </ion-content>

@@ -1,18 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>eliminarcuenta</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
   <ion-title>¿Esta seguro que quiere eliminar su cuenta?</ion-title>
-  <ion-button size="large">
-    <ion-icon name="close-outline"></ion-icon>
+  <ion-button size="large" color="light" (click)="si()">
+    <ion-icon id="icon"   name="close-outline"></ion-icon>
     <ion-text>Si</ion-text>
   </ion-button>
-  <ion-button size="large">
-    <ion-icon name="heart"></ion-icon>
+  <ion-button size="large" color="light" (click)="no()">
+    <ion-icon id="icon"   name="heart"></ion-icon>
     <ion-text>No</ion-text>
   </ion-button>
   

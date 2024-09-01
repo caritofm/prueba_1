@@ -1,18 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>calificar</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-title>Como calificarias esta receta?</ion-title>
+  <ion-title>¿Como calificarias esta receta?</ion-title>
 
-  <ion-button size="large">
-    <ion-icon name="thumbs-up-outline"></ion-icon>
+  <ion-button size="large" color="light" (click)="calificado()">
+    <ion-icon  id="icon" name="thumbs-up-outline"></ion-icon>
     <ion-text> Me gusto</ion-text>
   </ion-button>
 
-  <ion-button size="large">
+  <ion-button size="large" color="light" (click)="calificado()">
     <ion-icon  name="thumbs-down-outline"></ion-icon>
     <ion-text> No me gusto</ion-text>
   </ion-button>

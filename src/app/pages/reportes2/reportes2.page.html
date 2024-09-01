@@ -1,6 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>reportes2</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
@@ -8,10 +11,10 @@
   <ion-title>Reportar comentario</ion-title>
   <ion-list>
     <ion-item *ngFor="let x of usuario" >
-      <ion-textarea label="Comentario de:"></ion-textarea>
+      <ion-textarea label="">Comentario de:</ion-textarea>
     </ion-item>
     <ion-item>
-      <ion-textarea label="Nombre de usuario:" ></ion-textarea>
+      <ion-textarea label="" >Nombre de usuario:</ion-textarea>
     </ion-item>
     <ion-item>
       <ion-select label="Motivo de reporte" placeholder="Selecione una opcion">
@@ -20,7 +23,9 @@
         <ion-select-option value="Es dañina">Es dañina</ion-select-option>
       </ion-select>
     </ion-item>
-    <ion-button>Enviar</ion-button>
+    <ion-button size="medium" color="light" (click)="redirect()">
+      <ion-text>Enviar</ion-text>
+    </ion-button>
   </ion-list>
 
 </ion-content>

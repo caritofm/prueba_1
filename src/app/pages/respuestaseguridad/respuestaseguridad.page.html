@@ -1,12 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>respuestaseguridad</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-title>Pregunta de seguridad</ion-title>
-  <ion-textarea label="Ingresa la respuesta de tu pregunta de seguridad" labelPlacement="floating" fill="outline"></ion-textarea>
-  <ion-button>Siguiente</ion-button>
+  <ion-list>
+    <ion-title>Pregunta de seguridad</ion-title>
+    <ion-item>
+      <ion-textarea label="">Ingrese la respuesta de tu pregunta de seguridad</ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button size="medium" color="light" (click)="redirect()">
+    <ion-text>Siguente</ion-text>
+  </ion-button>
   
 </ion-content>

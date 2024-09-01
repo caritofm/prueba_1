@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-olvidasteclave',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OlvidasteclavePage implements OnInit {
 
-  constructor() { }
+  constructor(private alertController:AlertController, private router:Router) { }
 
   ngOnInit() {
+  }
+
+  redirect(){
+    let navigationextras:NavigationExtras = {}
+    this.router.navigate(['/respuestaseguridad'],navigationextras)
+    
   }
 
 }

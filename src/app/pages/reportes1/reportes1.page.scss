@@ -1,2 +1,28 @@
 #nReceta{}
 
+img{
+    width: 85px;
+    height: auto;
+}
+ion-icon{
+    float: right;
+    position: relative;
+    height: 78px;
+    color: darkorange;
+}
+
+ion-title{
+    text-align: center;
+    color: darkorange;
+}
+
+ion-text{
+    color: darkorange;
+}
+ion-button{
+    position: relative;
+    right: -160px;
+    padding: 20px;
+    
+}
+

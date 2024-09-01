@@ -1,39 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>cuenta</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-title>Cuenta</ion-title>
-  <ion-icon name="person-outline" size="large"></ion-icon>
-  <ion-input
-  type="name"
-  fill="solid"
-  label="Nombre: "
-  labelPlacement="floating"
-  ngModel
-  nombre
-></ion-input>
-<ion-input
-  type="email"
-  fill="solid"
-  label="Email: "
-  labelPlacement="floating"
-  ngModel
-  email
-></ion-input>
-<ion-input
-  type="recetas"
-  fill="solid"
-  label="Recetas publicadas:"
-  labelPlacement="floating"
-  ngModel
-></ion-input>
+<ion-content [fullscreen]="true"> 
+  <ion-item >
+    <ion-title id="titulo">Cuenta</ion-title>
+    <ion-icon  id="icon"  name="person-outline" size="large"></ion-icon>
+  </ion-item>
 
-<ion-button>Eliminar cuenta</ion-button>
-
-<ion-button>Modificar contraseña</ion-button>
-
- 
+  <ion-list>
+    <ion-item>
+      <ion-textarea label="Nombre:"    ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Email:"    ></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Recetas publicadas:"    ></ion-textarea>
+    </ion-item>
+    <ion-button color="light"   size="medium" (click)="eliminarCuenta()">
+      <ion-text>Eliminar cuenta</ion-text>
+    </ion-button>
+    <ion-button color="light"  size="medium" (click) = "modificar()">
+      <ion-text>Modificar</ion-text>
+    </ion-button>
+  </ion-list>
 </ion-content>

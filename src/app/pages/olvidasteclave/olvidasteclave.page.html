@@ -1,12 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>olvidasteclave</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-title>¿Olvidaste tu contraseña?</ion-title>
-  <ion-textarea label="Ingresa tu nombre de usuario" labelPlacement="floating" fill="outline" placeholder="Ingresa tu nombre de usuario"></ion-textarea>
-  <ion-button>Aceptar</ion-button>
-  
+  <ion-list>
+    <ion-title>¿Olvidaste tu contraseña?</ion-title>
+    <ion-item>
+      <ion-textarea label="">Ingrese tu nombre de usuario</ion-textarea>
+    </ion-item>
+    <ion-button color="light" size="medium" (click)="redirect()">
+      <ion-text>Aceptar</ion-text>
+    </ion-button>
+  </ion-list>
 </ion-content>

@@ -1,90 +1,64 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>registre</ion-title>
+    <ion-list>
+      <img src="./assets/icon/logoof.png" alt="">
+      <ion-icon name="notifications-outline" size="large"></ion-icon>
+    </ion-list>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <p> Ingrese su nombre</p>
-  <ion-input
-  id="input-name"
-  type="name"
-  fill="solid"
-  label="Nombre"
-  labelPlacement="floating"
-  errorText="Ingrese su nombre"
-  ngModel
-  name
-></ion-input>
-
-<p>Ingrese su email</p>
-<ion-input
-  id="input-email"
-  type="email"
-  fill="solid"
-  label="Email"
-  labelPlacement="floating"
-  errorText="Invalid email"
-  ngModel
-  email
-></ion-input>
-<p>Ingrese su nueva contraseña</p>
-<ion-input
-  id="input-password"
+  <ion-title>Registrese aquí</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-textarea label="Nombre:"></ion-textarea>
+    </ion-item>
+    <ion-item>
+     <ion-textarea type="email" label="Email:"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-input
   type="password"
-  fill="solid"
-  label="Contraseña"
-  labelPlacement="floating"
-  errorText="Invalid password"
-  ngModel
+  label="Contraseña:"
   password></ion-input>
-  <p>Confirme su contraseña</p>
-  <ion-input
-  id="input-password-"
+    </ion-item>
+    <ion-item>
+      <ion-input
   type="password"
-  fill="solid"
-  label="Confirme su contraseña"
-  labelPlacement="floating"
-  errorText="Invalid password"
-  ngModel
+  label="Confirme su contraseña:"
   password></ion-input>
-  <p>Ingrese su genero</p>
-  <ion-item id="genero">
-    <ion-select label="Genero" >
-      <ion-select-option value="Femenino">Femenino</ion-select-option>
-      <ion-select-option value="Masculino">Masculino</ion-select-option>
-      <ion-select-option value="No Binario">No Binario</ion-select-option>
-      <ion-select-option value="Prefiero no decirlo">Prefiero no decirlo</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <p>Elija una pregunta de seguridad</p>
-  <ion-item id="pregunta-seguridad">
-    <ion-select label="Pregunta de seguridad" >
-      <ion-select-option value="¿Mejor amiga de mi infancia?">¿Mejor amiga de mi infancia?</ion-select-option>
-      <ion-select-option value="¿Segundo nombre de mi madre?">¿Segundo nombre de mi madre?</ion-select-option>
-      <ion-select-option value="Nombre de mi mascota">Nombre de mi mascota</ion-select-option>
-      <ion-select-option value="¿Que me hubiera gustado estudiar en mi niñez?">¿Que me hubiera gustado estudiar en mi niñez?</ion-select-option>
-    </ion-select>
-  </ion-item>
+    </ion-item>
+    <ion-item>
+        <ion-select label="¿Cual es su genero?"    placeholder="Selecione una opcion" >
+          <ion-select-option value="Femenino">Femenino</ion-select-option>
+          <ion-select-option value="Masculino">Masculino</ion-select-option>
+          <ion-select-option value="No Binario">No Binario</ion-select-option>
+          <ion-select-option value="Prefiero no decirlo">Prefiero no decirlo</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Pregunta de seguridad" placeholder="Selecione una opcion" >
+        <ion-select-option value="¿Mejor amiga de mi infancia?">¿Mejor amiga de mi infancia?</ion-select-option>
+        <ion-select-option value="¿Segundo nombre de mi madre?">¿Segundo nombre de mi madre?</ion-select-option>
+        <ion-select-option value="Nombre de mi mascota">Nombre de mi mascota</ion-select-option>
+        <ion-select-option value="¿Que me hubiera gustado estudiar en mi niñez?">¿Que me hubiera gustado estudiar en mi niñez?</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Ingrese la respuesta de su pregunta de seguridad"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Tipo de comida de preferencia" placeholder="Elija una opcion" >
+        <ion-select-option value="Vegana">Vegana</ion-select-option>
+        <ion-select-option value="Vegetariana">Vegetariana</ion-select-option>
+        <ion-select-option value="Carnivora">Carnivora</ion-select-option>
+        <ion-select-option value="Prefiero no decirlo">Prefiero no decirlo</ion-select-option>
+      </ion-select>
 
-  <p>Ingrese su respuesta:</p>
-  <ion-input
-  id="respuesta"
-  type="text"
-  fill="solid"
-  label="Confirme su contraseña"
-  labelPlacement="floating"
-  errorText="Ingrese su respuesta"
-  ngModel></ion-input>
+    </ion-item>
+    <ion-button size="medium " color="light" (click)="redirect()">
+      <ion-text>Registrarme</ion-text>
+    </ion-button>
 
-  <p>Que tipo de comida prefieres:</p>
-  <ion-item id="comida">
-    <ion-select label="Tipo de comida de preferencia" >
-      <ion-select-option value="Vegana">Vegana</ion-select-option>
-      <ion-select-option value="Vegetariana">Vegetariana</ion-select-option>
-      <ion-select-option value="Carnivora">Carnivora</ion-select-option>
-      <ion-select-option value="Prefiero no decirlo">Prefiero no decirlo</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <ion-button  id="button-registrte"   fill="solid">Registrarse</ion-button>
+</ion-list>
 </ion-content>

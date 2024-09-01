@@ -1,0 +1,37 @@
+img{
+    width: 85px;
+    height: auto;
+}
+ion-icon{
+    float: right;
+    position: relative;
+    height: 78px;
+    color: darkorange;
+}
+
+#titulo {
+  text-align: center;
+}
+
+#icon{
+    height: 100px;
+    color: darkorange;
+    position: relative;
+    transform: translate(-220px,29px);
+
+}
+
+ion-button{
+    gap: 50px;
+    margin: 20px;
+    padding: 25px;
+    position: relative;
+    transform: translate(20px, -50px);
+    margin-top: 50px;
+    
+}
+
+ion-text{
+    color: darkorange;
+}
+
